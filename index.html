@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Text to Color Translation</title>
+</head>
+
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Text to Color Translation</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" role="button">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Welcome to Text to Color Translation</h2>
+                    <h3>Translate your text into colors and shapes</h3>
+                </hgroup>
+                <p>Input your text below and press translate to see the magic.</p>
+                <input type="text" id="text-input" placeholder="Enter text here" aria-label="Text input" required>
+                <button type="button"
+                    onclick="translateTextToColors(document.getElementById('text-input').value)">Translate</button>
+                <div id="output-area"></div>
+            </section>
+        </div>
+    </main>
+    <footer class="container">
+        <small>
+            <a href="#">Privacy Policy</a> • <a href="#">Social Media Links</a>
+        </small>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
